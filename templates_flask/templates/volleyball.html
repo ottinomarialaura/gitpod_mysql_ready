@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>
             volleyball
         </title>
     </head>
     <body>
-        <h1> Clash Units</h1>
+        <h1> LA PALLAVOLO </h1>
         <ol><li>Kevin Wong</li>
             <li>Brad Torsone</li>
+            <li>Eduardo Bacil</li>
+            <li>Brent Doble</li>
+            <li>Albert Hannemann</li>
+            <li>Jason Ring</li>
+            <li>Aaron Boss</li>
+            <li>Canyon Ceman</li>
+            <li>Dax Holdren</li>
+            <li>Mark Williams</li>
         </ol>
        {% for item in units %}
-       <p> nome giocatore:{{item[6]}}</p>
-       <p></p>
+       <p> Nome giocatore:{{item[6]}}</p>
+       <img src="../static/images/{{item[6]}}.jpg" alt="{{item[6]}}" width="687">
     {% endfor %}
     </ul>
     </body>
