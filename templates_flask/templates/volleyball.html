@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../static/style.css">
         <title>
             volleyball
         </title>
     </head>
     <body>
         <h1> LA PALLAVOLO </h1>
-        <ol><li>Kevin Wong</li>
+        <h2>
+            <ol><li>Kevin Wong</li>
             <li>Brad Torsone</li>
             <li>Eduardo Bacil</li>
             <li>Brent Doble</li>
@@ -19,9 +20,12 @@
             <li>Dax Holdren</li>
             <li>Mark Williams</li>
         </ol>
+        </h2>
        {% for item in units %}
        <p> Nome giocatore:{{item[6]}}</p>
-       <img src="../static/images/{{item[6]}}.jpg" alt="{{item[6]}}" width="687">
+       <div class="immagine">
+       <img src="../static/images/{{item[6]}}.jpg" alt="{{item[6]}}" width="444">
+       </div>
     {% endfor %}
     </ul>
     </body>
