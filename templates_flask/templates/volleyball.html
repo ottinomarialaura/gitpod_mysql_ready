@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="../static/style.css">
-        <title>
-            volleyball
-        </title>
-        <style>
+
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>
+        volleyball
+    </title>
+    <style>
         h1 {
             text-shadow: 4px 4px 4px rgb(255, 255, 255);
             font-size: 44px;
         }
-        </style>
-    </head>
+    </style>
+</head>
 
-    <body>
-        <h1> LA PALLAVOLO </h1>
-        <h2>
-            <ol><li>Kevin Wong</li>
+<body>
+    <h1> LA PALLAVOLO </h1>
+    <h2>
+        <ol>
+            <li>Kevin Wong</li>
             <li>Brad Torsone</li>
             <li>Eduardo Bacil</li>
             <li>Brent Doble</li>
@@ -27,13 +29,24 @@
             <li>Dax Holdren</li>
             <li>Mark Williams</li>
         </ol>
-        </h2>
-       {% for item in units %}
-       <p> Nome giocatore:{{item[6]}}</p>
-       <div class="immagine">
-       <img src="../static/images/{{item[6]}}.jpg" alt="{{item[6]}}" width="444">
-       </div>
+    </h2>
+    {% for item in units %}
+    <p class="linea_verde"> Nome giocatore:{{item[6]}}</p>
+
+    <div class="immagine">
+        <img src="../static/images/{{item[6]}}.jpg" alt="{{item[6]}}" width="444">
+        <div class="text-centered">
+            <p>nome:{{item[6]}}</p>
+            <p>nazione di appartenenza:{{item[2]}}</p>
+            <p>genere:{{item[5]}}</p>
+            <p>data di nascita:{{item[7]}}</p>
+            <a href="http://en.wikipedia.org/wiki/{{item[6]}}">Wikipedia</a>
+        </div>
+    </div>
+
+
     {% endfor %}
-    </ul>
-    </body>
+
+</body>
+
 </html>
